@@ -38,7 +38,7 @@ jobs:
           DOCKER_DEFAULT_PLATFORM: "linux/arm64"
         with:
           image: arc-arm-sdl:latest
-          path: /home/Arc/backends/backend-sdl/libs/linuxarm64/libsdl-arcarm64.so
+          path: /home/Arc/backends/backend-sdl/home/Arc/backends/backend-sdl/libs/linuxarm64/libsdl-arcarm64.so
           destination: backends/backend-sdl/libs/linuxarm64
       - name: Upload natives
         uses: actions/upload-artifact@v4
