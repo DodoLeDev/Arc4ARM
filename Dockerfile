@@ -1,4 +1,4 @@
-FROM docker.io/azul/zulu-openjdk:8-latest
+FROM docker.io/azul/zulu-openjdk:17-latest
 
 # Install dependencies
 RUN apt update && apt install -y libasound2-dev libdrm-dev libsdl2-dev libgbm-dev libglew-dev ant binutils g++
