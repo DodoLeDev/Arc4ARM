@@ -34,6 +34,8 @@ jobs:
       - name: Extract ARM SDL library from the container
         uses: shrink/actions-docker-extract@v3
         id: extract
+        env:
+          DOCKER_DEFAULT_PLATFORM: "linux/arm64"
         with:
           image: arc-arm-sdl:latest
           path: /home/Arc/backends/backend-sdl/libs/linuxarm64/libsdl-arcarm64.so
